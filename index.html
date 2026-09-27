@@ -1,0 +1,1117 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta
+        name="viewport"
+        content="width=device-width, initial-scale=1.0"
+    >
+
+    <meta
+        name="description"
+        content="QueueLess - Smart digital queue management system"
+    >
+
+    <title>QueueLess — Smart Queue Management</title>
+
+    <link
+        rel="stylesheet"
+        href="style.css"
+    >
+
+</head>
+
+
+<body>
+
+
+    <!-- =====================================
+         NAVBAR
+    ====================================== -->
+
+    <header class="navbar">
+
+        <div class="container nav-wrapper">
+
+            <a
+                href="#home"
+                class="logo"
+            >
+
+                <span class="logo-icon">
+                    Q
+                </span>
+
+                Queue<span>Less</span>
+
+            </a>
+
+
+            <nav class="nav-links">
+
+                <a
+                    href="#home"
+                    class="active"
+                >
+                    Home
+                </a>
+
+                <a href="#how-it-works">
+                    How It Works
+                </a>
+
+                <a href="#features">
+                    Features
+                </a>
+
+                <a href="#business">
+                    For Business
+                </a>
+
+            </nav>
+
+
+            <div class="nav-actions">
+
+                <button
+                    id="themeToggle"
+                    class="icon-btn"
+                    type="button"
+                >
+                    ☾
+                </button>
+
+                <button
+                    class="btn btn-primary"
+                    id="openQueueBtn"
+                    type="button"
+                >
+                    Join Queue
+                </button>
+
+            </div>
+
+
+            <button
+                class="mobile-menu"
+                id="mobileMenu"
+                type="button"
+            >
+                ☰
+            </button>
+
+        </div>
+
+    </header>
+
+
+
+    <!-- =====================================
+         HERO
+    ====================================== -->
+
+    <main>
+
+        <section
+            class="hero"
+            id="home"
+        >
+
+            <div class="container hero-grid">
+
+
+                <div class="hero-content">
+
+                    <div class="badge">
+
+                        <span class="status-dot"></span>
+
+                        Smart Queue Management
+
+                    </div>
+
+
+                    <h1>
+
+                        Stop waiting.
+
+                        <span>
+                            Start living.
+                        </span>
+
+                    </h1>
+
+
+                    <p class="hero-description">
+
+                        QueueLess lets you join a queue digitally,
+                        track your position in real time, and arrive
+                        when it's actually your turn.
+
+                    </p>
+
+
+                    <div class="hero-buttons">
+
+                        <button
+                            class="btn btn-primary btn-large"
+                            id="heroJoinBtn"
+                        >
+                            Join a Queue
+                            →
+                        </button>
+
+
+                        <a
+                            href="#how-it-works"
+                            class="btn btn-secondary btn-large"
+                        >
+                            See How It Works
+                        </a>
+
+                    </div>
+
+
+                    <div class="hero-stats">
+
+                        <div>
+
+                            <strong>
+                                15+
+                            </strong>
+
+                            <span>
+                                Services
+                            </span>
+
+                        </div>
+
+
+                        <div>
+
+                            <strong>
+                                24/7
+                            </strong>
+
+                            <span>
+                                Availability
+                            </span>
+
+                        </div>
+
+
+                        <div>
+
+                            <strong>
+                                100%
+                            </strong>
+
+                            <span>
+                                Digital
+                            </span>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+
+
+                <!-- QUEUE PREVIEW -->
+
+                <div class="hero-visual">
+
+                    <div class="dashboard-card">
+
+                        <div class="dashboard-header">
+
+                            <div>
+
+                                <span class="mini-label">
+                                    CURRENT QUEUE
+                                </span>
+
+                                <h3>
+                                    CityCare Clinic
+                                </h3>
+
+                            </div>
+
+                            <span class="live-badge">
+                                ● LIVE
+                            </span>
+
+                        </div>
+
+
+                        <div class="queue-number">
+
+                            <span>
+                                Your Token
+                            </span>
+
+                            <strong>
+                                #31
+                            </strong>
+
+                        </div>
+
+
+                        <div class="queue-position">
+
+                            <div>
+
+                                <span>
+                                    People ahead
+                                </span>
+
+                                <strong id="previewAhead">
+                                    3
+                                </strong>
+
+                            </div>
+
+
+                            <div>
+
+                                <span>
+                                    Est. wait
+                                </span>
+
+                                <strong>
+                                    25 min
+                                </strong>
+
+                            </div>
+
+                        </div>
+
+
+                        <div class="progress-container">
+
+                            <div class="progress-label">
+
+                                <span>
+                                    Queue progress
+                                </span>
+
+                                <span>
+                                    75%
+                                </span>
+
+                            </div>
+
+                            <div class="progress-bar">
+
+                                <div
+                                    class="progress-fill"
+                                    style="width:75%"
+                                ></div>
+
+                            </div>
+
+                        </div>
+
+
+                        <div class="queue-next">
+
+                            <span class="next-icon">
+                                →
+                            </span>
+
+                            <div>
+
+                                <small>
+                                    Currently serving
+                                </small>
+
+                                <strong>
+                                    Token #28
+                                </strong>
+
+                            </div>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+
+        <!-- =====================================
+             PROBLEM
+        ====================================== -->
+
+        <section class="problem-section">
+
+            <div class="container">
+
+                <div class="section-heading center">
+
+                    <span class="section-label">
+                        THE PROBLEM
+                    </span>
+
+                    <h2>
+                        Your time shouldn't be
+                        spent in a waiting room.
+                    </h2>
+
+                    <p>
+                        Traditional queues waste valuable time.
+                        QueueLess turns physical waiting into
+                        digital waiting.
+                    </p>
+
+                </div>
+
+
+                <div class="problem-grid">
+
+                    <div class="problem-card">
+
+                        <span>
+                            01
+                        </span>
+
+                        <h3>
+                            Long Waiting
+                        </h3>
+
+                        <p>
+                            Customers spend unnecessary time
+                            sitting in queues.
+                        </p>
+
+                    </div>
+
+
+                    <div class="problem-card">
+
+                        <span>
+                            02
+                        </span>
+
+                        <h3>
+                            No Visibility
+                        </h3>
+
+                        <p>
+                            People don't know how many customers
+                            are ahead of them.
+                        </p>
+
+                    </div>
+
+
+                    <div class="problem-card">
+
+                        <span>
+                            03
+                        </span>
+
+                        <h3>
+                            Lost Time
+                        </h3>
+
+                        <p>
+                            Customers could be doing something
+                            productive instead.
+                        </p>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+
+        <!-- =====================================
+             HOW IT WORKS
+        ====================================== -->
+
+        <section
+            class="how-section"
+            id="how-it-works"
+        >
+
+            <div class="container">
+
+                <div class="section-heading center">
+
+                    <span class="section-label">
+                        HOW IT WORKS
+                    </span>
+
+                    <h2>
+                        Four simple steps.
+                    </h2>
+
+                </div>
+
+
+                <div class="steps-grid">
+
+                    <div class="step-card">
+
+                        <div class="step-number">
+                            01
+                        </div>
+
+                        <h3>
+                            Find a Service
+                        </h3>
+
+                        <p>
+                            Choose the business and service
+                            you need.
+                        </p>
+
+                    </div>
+
+
+                    <div class="step-card">
+
+                        <div class="step-number">
+                            02
+                        </div>
+
+                        <h3>
+                            Get Your Token
+                        </h3>
+
+                        <p>
+                            Join the queue digitally and receive
+                            your unique token.
+                        </p>
+
+                    </div>
+
+
+                    <div class="step-card">
+
+                        <div class="step-number">
+                            03
+                        </div>
+
+                        <h3>
+                            Track Your Position
+                        </h3>
+
+                        <p>
+                            See your live position and estimated
+                            waiting time.
+                        </p>
+
+                    </div>
+
+
+                    <div class="step-card">
+
+                        <div class="step-number">
+                            04
+                        </div>
+
+                        <h3>
+                            Arrive on Time
+                        </h3>
+
+                        <p>
+                            Come when your turn is approaching.
+                        </p>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+
+        <!-- =====================================
+             FEATURES
+        ====================================== -->
+
+        <section
+            class="features-section"
+            id="features"
+        >
+
+            <div class="container">
+
+                <div class="section-heading center">
+
+                    <span class="section-label">
+                        FEATURES
+                    </span>
+
+                    <h2>
+                        Built around your time.
+                    </h2>
+
+                </div>
+
+
+                <div class="features-grid">
+
+                    <div class="feature-card">
+
+                        <div class="feature-icon">
+                            ⏱
+                        </div>
+
+                        <h3>
+                            Live Queue
+                        </h3>
+
+                        <p>
+                            Track your position in real time.
+                        </p>
+
+                    </div>
+
+
+                    <div class="feature-card">
+
+                        <div class="feature-icon">
+                            🎫
+                        </div>
+
+                        <h3>
+                            Digital Tokens
+                        </h3>
+
+                        <p>
+                            Get your token without standing
+                            in line.
+                        </p>
+
+                    </div>
+
+
+                    <div class="feature-card">
+
+                        <div class="feature-icon">
+                            📊
+                        </div>
+
+                        <h3>
+                            Smart Analytics
+                        </h3>
+
+                        <p>
+                            Businesses can understand their
+                            queue performance.
+                        </p>
+
+                    </div>
+
+
+                    <div class="feature-card">
+
+                        <div class="feature-icon">
+                            📱
+                        </div>
+
+                        <h3>
+                            Mobile Friendly
+                        </h3>
+
+                        <p>
+                            Access your queue from any device.
+                        </p>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+
+        <!-- =====================================
+             BUSINESS
+        ====================================== -->
+
+        <section
+            class="business-section"
+            id="business"
+        >
+
+            <div class="container business-grid">
+
+                <div>
+
+                    <span class="section-label">
+                        FOR BUSINESSES
+                    </span>
+
+                    <h2>
+                        Turn waiting time
+                        into better service.
+                    </h2>
+
+                    <p>
+                        QueueLess gives businesses the tools
+                        to manage customers efficiently and
+                        understand their busiest periods.
+                    </p>
+
+
+                    <ul class="check-list">
+
+                        <li>
+                            ✓ Manage digital queues
+                        </li>
+
+                        <li>
+                            ✓ Call the next customer
+                        </li>
+
+                        <li>
+                            ✓ Track waiting times
+                        </li>
+
+                        <li>
+                            ✓ View daily statistics
+                        </li>
+
+                    </ul>
+
+
+                    <button
+                        class="btn btn-primary"
+                        id="businessBtn"
+                    >
+                        Start Managing →
+                    </button>
+
+                </div>
+
+
+                <div class="business-dashboard">
+
+                    <div class="dashboard-top">
+
+                        <span>
+                            TODAY'S OVERVIEW
+                        </span>
+
+                        <span class="live-badge">
+                            LIVE
+                        </span>
+
+                    </div>
+
+
+                    <div class="business-metrics">
+
+                        <div>
+
+                            <span>
+                                Customers
+                            </span>
+
+                            <strong>
+                                48
+                            </strong>
+
+                        </div>
+
+
+                        <div>
+
+                            <span>
+                                Served
+                            </span>
+
+                            <strong>
+                                35
+                            </strong>
+
+                        </div>
+
+
+                        <div>
+
+                            <span>
+                                Avg. Wait
+                            </span>
+
+                            <strong>
+                                18m
+                            </strong>
+
+                        </div>
+
+                    </div>
+
+
+                    <div class="mini-queue">
+
+                        <div>
+                            <span>#36</span>
+                            <small>Waiting</small>
+                        </div>
+
+                        <div>
+                            <span>#37</span>
+                            <small>Waiting</small>
+                        </div>
+
+                        <div class="serving">
+                            <span>#35</span>
+                            <small>Serving</small>
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+
+        <!-- =====================================
+             CTA
+        ====================================== -->
+
+        <section class="cta-section">
+
+            <div class="container cta-content">
+
+                <span class="section-label">
+                    YOUR TIME MATTERS
+                </span>
+
+                <h2>
+                    Ready to stop waiting?
+                </h2>
+
+                <p>
+                    Join your next queue digitally.
+                </p>
+
+                <button
+                    class="btn btn-light btn-large"
+                    id="ctaJoinBtn"
+                >
+                    Join a Queue →
+                </button>
+
+            </div>
+
+        </section>
+
+    </main>
+
+
+
+    <!-- =====================================
+         FOOTER
+    ====================================== -->
+
+    <footer class="footer">
+
+        <div class="container footer-content">
+
+            <div>
+
+                <a
+                    href="#home"
+                    class="logo"
+                >
+
+                    <span class="logo-icon">
+                        Q
+                    </span>
+
+                    Queue<span>Less</span>
+
+                </a>
+
+                <p>
+                    Your time. Your queue. Your way.
+                </p>
+
+            </div>
+
+
+            <p>
+                © 2026 QueueLess.
+                Built with HTML, CSS & JavaScript.
+            </p>
+
+        </div>
+
+    </footer>
+
+
+
+    <!-- =====================================
+         JOIN QUEUE MODAL
+    ====================================== -->
+
+    <div
+        class="modal"
+        id="queueModal"
+    >
+
+        <div class="modal-overlay"></div>
+
+
+        <div class="modal-card">
+
+            <button
+                class="modal-close"
+                id="modalClose"
+                type="button"
+            >
+                ×
+            </button>
+
+
+            <span class="section-label">
+                JOIN A QUEUE
+            </span>
+
+            <h2>
+                Get your digital token
+            </h2>
+
+            <p>
+                Select a service and join the queue
+                without waiting physically.
+            </p>
+
+
+            <form id="queueForm">
+
+
+                <div class="form-group">
+
+                    <label>
+                        Choose Business
+                    </label>
+
+                    <select
+                        id="businessSelect"
+                        required
+                    >
+
+                        <option value="">
+                            Select a business
+                        </option>
+
+                        <option value="CityCare Clinic">
+                            CityCare Clinic
+                        </option>
+
+                        <option value="Style Studio">
+                            Style Studio
+                        </option>
+
+                        <option value="QuickServe Center">
+                            QuickServe Center
+                        </option>
+
+                    </select>
+
+                </div>
+
+
+                <div class="form-group">
+
+                    <label>
+                        Choose Service
+                    </label>
+
+                    <select
+                        id="serviceSelect"
+                        required
+                    >
+
+                        <option value="">
+                            Select a service
+                        </option>
+
+                        <option
+                            value="General Consultation"
+                            data-time="10"
+                        >
+                            General Consultation — 10 min
+                        </option>
+
+                        <option
+                            value="Haircut"
+                            data-time="25"
+                        >
+                            Haircut — 25 min
+                        </option>
+
+                        <option
+                            value="Document Service"
+                            data-time="15"
+                        >
+                            Document Service — 15 min
+                        </option>
+
+                    </select>
+
+                </div>
+
+
+                <div class="form-group">
+
+                    <label>
+                        Your Name
+                    </label>
+
+                    <input
+                        type="text"
+                        id="customerName"
+                        placeholder="Enter your name"
+                        required
+                    >
+
+                </div>
+
+
+                <button
+                    class="btn btn-primary btn-full"
+                    type="submit"
+                >
+                    Get My Token →
+                </button>
+
+            </form>
+
+        </div>
+
+    </div>
+
+
+
+    <!-- =====================================
+         TOKEN MODAL
+    ====================================== -->
+
+    <div
+        class="modal"
+        id="tokenModal"
+    >
+
+        <div class="modal-overlay"></div>
+
+
+        <div class="modal-card token-card">
+
+            <button
+                class="modal-close"
+                id="tokenClose"
+                type="button"
+            >
+                ×
+            </button>
+
+
+            <div class="success-icon">
+                ✓
+            </div>
+
+
+            <span class="section-label">
+                QUEUE CONFIRMED
+            </span>
+
+
+            <h2>
+                You're in!
+            </h2>
+
+
+            <p id="tokenBusiness">
+                CityCare Clinic
+            </p>
+
+
+            <div class="token-display">
+
+                <span>
+                    YOUR TOKEN
+                </span>
+
+                <strong id="tokenNumber">
+                    #31
+                </strong>
+
+            </div>
+
+
+            <div class="token-info">
+
+                <div>
+
+                    <span>
+                        People ahead
+                    </span>
+
+                    <strong id="tokenAhead">
+                        3
+                    </strong>
+
+                </div>
+
+
+                <div>
+
+                    <span>
+                        Estimated wait
+                    </span>
+
+                    <strong id="tokenWait">
+                        30 min
+                    </strong>
+
+                </div>
+
+            </div>
+
+
+            <button
+                class="btn btn-secondary btn-full"
+                id="closeTokenBtn"
+                type="button"
+            >
+                Done
+            </button>
+
+        </div>
+
+    </div>
+
+
+
+    <script src="script.js"></script>
+
+</body>
+
+</html>
